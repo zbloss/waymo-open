@@ -1,20 +1,21 @@
 [tool.poetry]
 name = "waymo-open"
 version = "0.1.0"
-description = "Explores the waymo open dataset and models on it."
+description = "Explores the waymo open dataset and models on it"
 authors = ["Zach Bloss <zacharybloss@gmail.com>"]
 readme = "README.md"
 packages = [{include = "waymo_open"}]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "3.9"
+waymo-open-dataset-tf-2-11-0 = "1.5.2"
+numpy = "^1.25.2"
 gcsfs = "^2023.6.0"
-tensorflow-datasets = "^4.9.2"
 
 [tool.poetry.group.dev.dependencies]
-notebook = "^7.0.1"
+notebook = "^7.0.2"
 ipywidgets = "^8.1.0"
-matplotlib = "^3.7.2"
+jupyter-http-over-ws = "^0.0.8"
 
 [build-system]
 requires = ["poetry-core"]
